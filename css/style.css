@@ -85,24 +85,10 @@ nav {
     height: 100px;
 }
 
-#video {
-    width: 0;
-    height: 0;
-}
-
 #home {
     display: flex;
     flex-direction: row;
-    height: 86vh;
-}
-
-#home-curve {
-    position: relative;
-    background-color: #464646;
-    border-radius: 50%;
-    top: 50px;
-    width: 100%;
-    height: 14vh;
+    min-height: 86vh;
 }
 
 #home>div {
@@ -125,7 +111,7 @@ nav {
     margin-right: 20px;
 }
 
-#video {
+#video-button {
     color: #FFDF00;
 }
 
@@ -136,6 +122,16 @@ nav {
 #phone {
     width: 700px;
 }
+
+#curve-container {
+    background-color: #FFDF00;
+}
+
+#curve-container>img {
+    width: 100%;
+}
+
+
 
 /* End Home Section */
 
@@ -313,13 +309,9 @@ form>.button {
     #how-it-works-container>div {
         width: auto;
     }
-
-    #home-curve {
-        display: none;
-    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 971px) {
     #phone-container {
         display: none;
     }
@@ -327,7 +319,9 @@ form>.button {
     #home>div {
         width: auto;
     }
+}
 
+@media (max-width: 767px) {
     #feature-container, #pricing-container {
         flex-direction: column;
         align-items: center;
