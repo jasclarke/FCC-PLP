@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 section {
     padding: 2% 13% 5%;
 }
@@ -43,7 +47,7 @@ header {
     flex-direction: row;
     align-items: center;
     height: 100px;
-    padding: 1% 13% 0;
+    padding: 50px 13% 0;
     z-index: 999;
 }
 
@@ -160,6 +164,11 @@ nav {
 #how-it-works-container>div {
     width: 40%;
 }
+
+#video {
+    max-width: 560; 
+    height: 315;
+  }
 
 /* End How it works Section */
 
@@ -312,6 +321,13 @@ form>.button {
 }
 
 @media (max-width: 971px) {
+    #download {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 767px) {
+
     #phone-container {
         display: none;
     }
@@ -319,16 +335,18 @@ form>.button {
     #home>div {
         width: auto;
     }
-}
 
-@media (max-width: 767px) {
     #feature-container, #pricing-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #feature-container>div, #pricing-container>div {
+    #feature-container>div {
+        width: 100%;
+    }
+
+    #pricing-container>div {
         min-width: 50%;
     }
 
