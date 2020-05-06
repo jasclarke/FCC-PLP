@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Yanone+Kaffeesatz&display=swap');
+
+body {
+    background-color: #464646;
+    color: #fff;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.5rem;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2% 13% 5%;
+}
+
+h2 {
+    min-width: 100%;
+    font-family: 'Anton';
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+#feature-container, #how-it-works-container, #pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+
+/* Menu */
+
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #464646;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    padding: 1% 13% 0;
+    z-index: 999;
+}
+
+header div, nav {
+    width: 50%;
+}
+
+nav {
+    text-align: right;
+}
+
+.nav-link {
+    margin-right: 5%;
+    color: #FFDF00;
+    text-decoration: none;
+}
+
+#header-img {
+    width: 70px;
+}
+
+/* End Menu */
+
+/* Home Section */
+
+.intro {
+    margin-top: 5%;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #FFDF00;
+    border-radius: 25px;
+    padding: 15px 45px 15px;
+    text-decoration: none;
+}
+
+.feature-icon {
+    height: 100px;
+}
+
+#video {
+    width: 0;
+    height: 0;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    height: 86vh;
+}
+
+#home-curve {
+    position: relative;
+    background-color: #464646;
+    border-radius: 50%;
+    top: 50px;
+    width: 100%;
+    height: 14vh;
+}
+
+#home>div {
+    width: 50%;
+}
+
+#tagline {
+    font-family: 'Anton';
+    font-size: 3rem;
+    color: #FFDF00;
+}
+
+#cta {
+    margin-top: 10%;
+}
+
+#download {
+    background-color: #FFDF00;
+    color: #464646;
+    margin-right: 20px;
+}
+
+#video {
+    color: #FFDF00;
+}
+
+#phone-container {
+    text-align: center;
+}
+
+#phone {
+    width: 700px;
+}
+
+/* End Home Section */
+
+/* Features Section */
+
+#features {
+    background-color: #FFDF00;
+    color: #464646;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+#feature-container>div {
+    width: 28%;
+    text-align: center;
+}
+
+/* End Features Section */
+
+/* How it works Section */
+
+#how-it-works>h2, #how-it-works h3, #notify>h2 {
+    color: #FFDF00;
+}
+
+#how-it-works-container>div {
+    width: 40%;
+}
+
+/* End How it works Section */
+
+/* Pricing Section */
+
+small {
+    font-size: 0.75rem;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    border-bottom: 2px solid #464646;
+    padding-bottom: 5px;
+}
+
+.price {
+    background-color: #464646;
+    color: #FFDF00;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10% auto;
+    line-height: 100px;
+ }
+
+ .background-plan {
+     margin-top: 3%;
+     height: 465px;
+ }
+
+#pricing {
+    background-color: #FFDF00;
+    color: #464646;
+}
+
+#pricing-container>div {
+    width: 28%;
+    border: 3px solid #464646;
+    text-align: center;
+}
+
+#pricing-container h3 {
+    margin-bottom: 0;
+}
+
+#pricing-container .button {
+    margin: 10% 0;
+    background-color: #464646;
+    color: #FFDF00;
+}
+
+#highlight-plan {
+    height: 530px;
+    background-color: #464646;
+    color: #FFDF00;
+    box-shadow: 0px 0px 10px #464646;
+}
+
+#highlight-plan>.price {
+    background-color: #FFDF00;
+    color: #464646;
+}
+
+#highlight-plan td {
+    border-bottom: 2px solid #FFDF00;
+}
+
+#highlight-plan>.button {
+    background-color: #FFDF00;
+    color: #464646;
+}
+
+/* End Pricing Section */
+
+/* Notify Section */
+
+form {
+    text-align: center;
+}
+
+form>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form>.button {
+    background-color: #FFDF00;
+    color: #464646;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+#email-container {
+    flex-direction: column;
+}
+
+#email-label {
+    align-self: start;
+    font-size: 1rem;
+}
+
+#email {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #FFDF00;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    color: #FFDF00;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.25rem;
+}
+
+#email:focus {
+    outline: none;
+    border-bottom: 1px solid #FFDF00;
+}
+
+#notify>div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* End Notify Section */
+
+/**
+*
+* Mobile styles
+*
+**/
+
+@media (max-width: 1339px) {
+    #how-it-works-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #how-it-works-container>div {
+        width: auto;
+    }
+
+    #home-curve {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #phone-container {
+        display: none;
+    }
+
+    #home>div {
+        width: auto;
+    }
+
+    #feature-container, #pricing-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #feature-container>div, #pricing-container>div {
+        min-width: 50%;
+    }
+
+    #highlight-plan {
+        margin-top: 2%;
+    }
+}
