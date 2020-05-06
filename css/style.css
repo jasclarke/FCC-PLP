@@ -330,6 +330,22 @@ form>.button {
     }
 }
 
+@media (max-width: 899px) {
+    header {
+        flex-direction: column;
+    }
+
+    header>div, nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 767px) {
 
     #phone-container {
