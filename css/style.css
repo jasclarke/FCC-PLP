@@ -300,6 +300,10 @@ form>.button {
     margin: 0 auto;
 }
 
+#submit {
+    -webkit-appearance: none;
+}
+
 /* End Notify Section */
 
 /**
