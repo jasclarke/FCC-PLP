@@ -28,6 +28,10 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: #FFDF00;
+}
+
 #feature-container, #how-it-works-container, #pricing-container {
     display: flex;
     flex-direction: row;
